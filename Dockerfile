@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 
-RUN apt-get update && \
-  apt-get install -y curl git build-essential sudo \
+RUN apt-get -qq update && \
+  apt-get -qq install -y --no-install-recommends curl git build-essential sudo \
     python3 python3-pip python3-dev \
     nodejs npm \
     postgresql postgresql-contrib \
